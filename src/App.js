@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./pages/Home";
+import Swipe from "./pages/Swipe";
+import Main from "./pages/Main";
+import { BrowserRouter, Routes, Route  } from "react-router-dom";
+import { useCookies } from 'react-cookie'
 
-function App() {
+const App =() => {
+
+  const [cs, setC, removeC] = useCookies(['user'])
+
+  const authToken = cs.AuthToken
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        {authToken && <Route path="/swipe" element={<Swipe/>}/>}
+        {authToken &&<Route path="/main" element={<Main/>}/>}
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App;
