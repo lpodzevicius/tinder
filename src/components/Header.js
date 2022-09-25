@@ -1,6 +1,6 @@
 import { useCookies } from 'react-cookie'
 
-const ChatHeader = ({ user }) => {
+const Header = ({ user }) => {
     const [cs, setC, removeC] = useCookies(['user'])
 
     const logout = () => {
@@ -17,9 +17,9 @@ const ChatHeader = ({ user }) => {
                 </div>
                 <h3>{user.first_name}</h3>
             </div>
-            <i className="log-out-icon" onClick={logout}>⇦</i>
+            <i className="logouti" onClick={logout}>⌫</i>
         </div>
     )
 }
 
-export default ChatHeader
+export default Header

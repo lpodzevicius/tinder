@@ -58,7 +58,7 @@ const Main = () => {
                 showModal={false}
             />
 
-            <div className="onboarding">
+            <div className="main">
                 <h2>Fill in information about yourself</h2>
 
                 <form onSubmit={handleSubmit}>
@@ -75,12 +75,12 @@ const Main = () => {
                         />
 
                         <label>Birthday</label>
-                        <div className="multiple-input-container">
+                        <div className="multi-input-container">
                             <input
                                 id="dob_day"
                                 type="number"
                                 name="dob_day"
-                                placeholder="DD"
+                                placeholder="Day"
                                 required={true}
                                 value={formData.dob_day}
                                 onChange={handleChange}
@@ -90,7 +90,7 @@ const Main = () => {
                                 id="dob_month"
                                 type="number"
                                 name="dob_month"
-                                placeholder="MM"
+                                placeholder="Month"
                                 required={true}
                                 value={formData.dob_month}
                                 onChange={handleChange}
@@ -100,7 +100,7 @@ const Main = () => {
                                 id="dob_year"
                                 type="number"
                                 name="dob_year"
-                                placeholder="YYYY"
+                                placeholder="Year"
                                 required={true}
                                 value={formData.dob_year}
                                 onChange={handleChange}
@@ -108,7 +108,7 @@ const Main = () => {
                         </div>
 
                         <label>Gender</label>
-                        <div className="multiple-input-container">
+                        <div className="multi-input-container">
                             <input
                                 id="man-gender-identity"
                                 type="radio"
@@ -150,7 +150,7 @@ const Main = () => {
 
                         <label>Show Me</label>
 
-                        <div className="multiple-input-container">
+                        <div className="multi-input-container">
                             <input
                                 id="man-gender-interest"
                                 type="radio"
@@ -202,6 +202,7 @@ const Main = () => {
                             type="url"
                             name="url"
                             id="url"
+                            placeholder='Url'
                             onChange={handleChange}
                             required={true}
                         />
@@ -214,11 +215,12 @@ const Main = () => {
                             type="url"
                             name="url2"
                             id="url2"
+                            placeholder='Url2'
                             onChange={handleChange}
                             required={true}
                         />
                         <div className="photo-container">
-                            {formData.url && <img src={formData.url2} alt="profile pic 2 preview" />}
+                            {formData.url2 && <img src={formData.url2} alt="profile pic 2 preview" />}
                         </div>
 
 

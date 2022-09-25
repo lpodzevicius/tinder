@@ -30,8 +30,8 @@ const Home = () => {
                 setIsSignUp={setIsSignUp}
             />
             <div className="home">
-                <h1 className="primary-title">Dating App</h1>
-                <button className="primary-button" onClick={handleClick}>
+                <h1 className="first-title">Dating App</h1>
+                <button className="first-button" onClick={handleClick}>
                     {authToken ? 'SIGNOUT' : 'REGISTRATION'}
                 </button>
 

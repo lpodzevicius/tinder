@@ -47,8 +47,8 @@ const AuthModal = ({ setShowModal, isSignUp }) => {
     }
 
     return (
-        <div className="auth-modal">
-            <div className="close-icon" onClick={handleClick}>ⓧ</div>
+        <div className="at-modal">
+            <div className="closei" onClick={handleClick}>✖</div>
 
             <h2>{isSignUp ? 'REGISTRATION' : 'LOG IN'}</h2>
             
@@ -77,7 +77,7 @@ const AuthModal = ({ setShowModal, isSignUp }) => {
                     required={true}
                     onChange={(e) => setConfirmPassword(e.target.value)}
                 />}
-                <input className="secondary-button" type="submit" />
+                <input className="second-button" type="submit" />
                 <p>{error}</p>
             </form>
 

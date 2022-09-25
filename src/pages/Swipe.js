@@ -1,6 +1,6 @@
 import TinderCard from 'react-tinder-card'
 import { useEffect, useState } from 'react'
-import ChatContainer from '../components/ChatContainer'
+import Container from '../components/Container'
 import { useCookies } from 'react-cookie'
 import axios from 'axios'
 
@@ -78,8 +78,8 @@ const Swipe = () => {
     return (
         <>
             {user &&
-                <div className="dashboard">
-                    <ChatContainer user={user} />
+                <div className="sw">
+                    <Container user={user} />
                     <div className="swipe-container">
                         <div className="card-container">
 

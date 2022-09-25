@@ -11,12 +11,12 @@ h2 {
 
 
 
-.primary-title {
+.first-title {
     font-size: 90px;
     color:red;
 }
 
-.primary-button {
+.first-button {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-size: 15px;
@@ -26,11 +26,11 @@ h2 {
     border: none;
 }
 
-.primary-button:hover {
+.first-button:hover {
     background: red;
 }
 
-.secondary-button {
+.second-button {
     color: rgb(119, 121, 120);
     background-color: rgb(164, 162, 162);
     font-weight: 500;
@@ -42,16 +42,16 @@ h2 {
     margin: 6px;
 }
 
-.secondary-button:hover {
+.second-button:hover {
     color: rgb(48, 48, 48);
     border: solid 2px rgb(48, 48, 48);
 }
 
-.close-icon {
+.closei {
     font-size: 20px;
     
 }
-/*-------- Navbar --------*/
+/* Nav */
 
 nav {
     width: 100%;
@@ -89,7 +89,7 @@ nav .logo-container .logo {
     width: 100%;
 }
 
-/*-------- Home page --------*/
+/* Home */
 .overlay {
     width: 100vw;
     height: 100vh;
@@ -105,8 +105,8 @@ nav .logo-container .logo {
     margin-top: 30vh;
 }
 
-/*-------- Auth Modal --------*/
-.auth-modal {
+/* AModal */
+.at-modal {
     position: absolute;
     left: 0;
     right: 0;
@@ -114,115 +114,115 @@ nav .logo-container .logo {
     margin-left: auto;
     margin-right: auto;
     max-width: 360px;
-    height: 600px;
-    background-color: rgb(255, 255, 255);
+    height: 500px;
+    background-color: rgb(246, 244, 242);
     border-radius: 10px;
-    padding: 40px;
+    padding: 50px;
 }
 
-.auth-modal .close-icon {
+.at-modal .closei {
     float: right;
 }
 
-.auth-modal form {
+.at-modal form {
     display: flex;
     flex-direction: column;
 }
 
-.auth-modal input[type=password],
-.auth-modal input[type=username] {
+.at-modal input[type=password],
+.at-modal input[type=username] {
     padding: 8px;
     margin: 8px;
     font-size: 17px;
 }
 
-/*-------- OnBoarding Page --------*/
-.onboarding {
-    background: rgb(242, 172, 43);
-    border-top: solid 1px rgb(213, 213, 213);
+/* Main */
+.main {
+    background: linear-gradient(360deg, rgb(196, 62, 14), rgb(215, 246, 11));
+    border-top: solid 4px rgb(4, 244, 156);
 }
 
-.onboarding form {
+.main form {
     display: flex;
     justify-content: center;
 }
 
-.onboarding form section {
+.main form section {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    width: 35%;
+    padding: 30px;
+    width: 40%;
     text-align: start;
 }
 
-.onboarding form input {
+.main form input {
     padding: 15px 30px;
     margin: 10px 0;
     font-size: 15px;
-    border: solid 2px rgb(219, 219, 219);
-    border-radius: 10px;
+    border: solid 2px rgb(229, 76, 21);
+    border-radius: 15px;
 }
 
-.onboarding form label {
-    margin: 10px 0;
+.main form label {
+    margin: 10px 5px;
 }
 
-.onboarding form .multiple-input-container {
+.main form .multi-input-container {
     display: flex;
     flex-direction: row;
 }
 
-.onboarding form input::-webkit-outer-spin-button,
-.onboarding form input::-webkit-inner-spin-button {
+.main form input::-webkit-outer-spin-button,
+.main form input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-.onboarding form .multiple-input-container input {
+.main form .multi-input-container input {
     margin-right: 20px;
 }
 
-.onboarding form .multiple-input-container label {
+.main form .multi-input-container label {
     padding: 10px;
-    border: solid 2px rgb(144, 144, 144);
-    border-radius: 10px;
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 15px;
     transition: all 0.3s;
     margin-right: 10px;
 }
 
-.onboarding form input[type=radio] {
+.main form input[type=radio] {
     display: none;
 }
 
-.onboarding form input[type=number] {
+.main form input[type=number] {
     width: 10%;
 }
 
-.onboarding form input[type=radio]:checked+label {
-    border: solid 2px rgb(221, 39, 22);
+.main form input[type=radio]:checked+label {
+    border: solid 2px rgb(244, 28, 9);
 }
 
-.onboarding form input[type=submit]:hover {
+.main form input[type=submit]:hover {
     background-color: rgb(235, 235, 235);
 }
 
-.onboarding form input[type=submit]:active {
+.main form input[type=submit]:active {
     background-color: rgb(226, 115, 115);
 }
 
-.onboarding form .photo-container img {
+.main form .photo-container img {
     width: 100%
 }
 
-/*-------- Dashboard  --------*/
-.dashboard {
+/* Swipe */
+.sw {
     background: lightyellow;
     display: flex;
     justify-content: space-between;
 }
 
-.dashboard .swipe-container {
-    width: 70%;
+.sw .swipe-container {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -234,7 +234,7 @@ nav .logo-container .logo {
     position: absolute;
 }
 
-.dashboard .card-container {
+.sw .card-container {
     width: 400px;
     height: 650px;
 }
@@ -251,15 +251,15 @@ nav .logo-container .logo {
     margin-top: 0;
 }
 
-.dashboard .swipe-info {
+.sw .swipe-info {
     position: absolute;
     bottom: 0;
     padding: 10px;
 }
 
-/*-------- Chat Container --------*/
+/* Matches Cont */
 .c-container {
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(250, 92, 92), rgb(242, 246, 140));
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
         rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     width: 30%;
@@ -268,28 +268,29 @@ nav .logo-container .logo {
 }
 
 .c-container .c-container-header {
-    background: linear-gradient(45deg, rgb(246, 207, 12), rgb(141, 181, 9));
+    background: linear-gradient(270deg, rgb(250, 92, 92), rgb(242, 246, 140));
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.c-container .option {
+.c-container .op {
+    
     border: none;
-    background-color: rgb(255, 255, 255);
-    border-bottom: solid 4px rgb(247, 227, 15);
+    color: white;
+    background-color: rgb(251,119,119);
+    border: solid 4px rgb(198, 241, 106);
     font-size: 20px;
-    margin: 2px;
-    padding: 10px;
+    padding: 20px;
 }
 
-.c-container .option:disabled {
+.c-container .op:disabled {
     border-bottom: solid 4px rgb(187, 187, 187);
 }
 
 .c-container .profile,
-.c-container .log-out-icon {
+.c-container .logouti {
     display: flex;
     align-items: center;
     padding: 20px;
@@ -308,17 +309,8 @@ nav .logo-container .logo {
     width: 100%;
 }
 
-/*-------- Chat Display --------*/
-.c-display,
 .matches-display {
     padding: 20px;
     height: 60vh;
     overflow-y: auto;
-}
-
-/*-------- Chat Input --------*/
-.c-input {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
 }
